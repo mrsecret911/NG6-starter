@@ -1,0 +1,25 @@
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+
+    th, td {
+        padding: 5px;
+    }
+
+    th {
+        color: #fff;
+        background: #27ae60;
+    }
+
+    th:not(:last-child) {
+        border-right: 1px solid #fff;
+    }
+
+    td {
+        border: 1px solid #ecf0f1;
+    }
+}

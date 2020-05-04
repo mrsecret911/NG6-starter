@@ -1,0 +1,19 @@
+<navbar></navbar>
+<main>
+  <table>
+    <tr>
+      <th>Avatar</th>
+      <th>Name</th>
+      <th>E-mail</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+    <tr ng-repeat="person in $ctrl.list">
+      <td><img ng-src={{person.picture.thumbnail}} alt=""></td>
+      <td>{{person.name.first}} {{person.name.last}}</td>
+      <td>{{person.email}}</td>
+      <td>{{person.phone}}</td>
+      <td><span><a ui-sref="person({personId: person.login.uuid})">about</a></span></td>
+    </tr>
+  </table>
+</main>

@@ -1,9 +1,11 @@
 import angular from 'angular';
-import Home from './home/home';
+import Persons from './persons/persons';
+import Person from './person/ng/person';
 import About from './about/about';
 
 let componentModule = angular.module('app.components', [
-  Home,
+  Persons,
+  Person,
   About
 ])
 
